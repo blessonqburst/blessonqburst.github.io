@@ -109,7 +109,7 @@ export default class Presentation extends React.Component {
           <Slide transition={["zoom"]} bgColor="primary">
             <CodePane
               lang="jsx"
-              source={require("raw!../assets/first.example")}
+              source={require("raw!../assets/codedeck/first.example")}
             />
           <Appear>
             <CodePane
