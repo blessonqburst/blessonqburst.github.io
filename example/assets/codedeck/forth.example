@@ -1,0 +1,4 @@
+handleClick: function(event) {
+  var inputNum = this.ref.random_number;
+  thsi.setState({value: inputNum.value});
+},

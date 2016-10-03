@@ -1,0 +1,13 @@
+<script type="text/jsx">
+var MyApp = React.createClass({
+  render: function() {
+    return (
+      <h1>Hello React!!</h1>
+    )
+  }
+})
+
+React.render(<MyApp />, document.getElementById('content'));
+</script>
+</body>
+</html>

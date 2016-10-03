@@ -1,0 +1,15 @@
+import { Route } fro 'react-router';
+
+const routes = (
+  <Route handler ={App} path="/">
+    <Route name="about" handler={About} />
+  </Route>
+);
+
+...
+
+const routes = (
+  <Route component ={App} path="/">
+    <Route path="about" component={About} />
+  </Route>
+);
