@@ -1,9 +1,8 @@
-<Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
-</Route>
+const link = this.context.router.makeHref('user',
+                                          { userId: 1234 },
+                                          { message: 'Hi' });
 
 ...
 
-<Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
-</Route>
+const link = this.context.router.createHref('/user/1234',
+                                          { message: 'Hi' });

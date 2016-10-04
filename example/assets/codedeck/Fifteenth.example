@@ -1,9 +1,10 @@
-<Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
-</Route>
+this.context.router.transitionTo(pathname, params, query)
+this.context.router.transitionTo('user',
+                                  { userId: 1234 },
+                                  { message: 'Hi' });
 
 ...
 
-<Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
-</Route>
+this.context.router.transitionTo(pathname, query, state)
+this.context.router.transitionTo('/user/1234',
+                                  { message: 'Hi' });

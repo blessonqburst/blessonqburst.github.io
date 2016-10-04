@@ -1,9 +1,13 @@
-<Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
-</Route>
+Router.run(routes, (Handler) => {
+  React.render(<Handler/>, document.body);
+})
 
 ...
 
-<Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
-</Route>
+import { history } from 'react-router/lib/HashHistory';
+
+React.render((
+  <Router history={history}>
+    {routes}
+  </Router>
+), document.body);

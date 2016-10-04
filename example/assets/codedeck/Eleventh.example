@@ -1,9 +1,11 @@
 <Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
+  <DefaultRoute handler={Home} />
+  <Route name="about" handler={About} />
 </Route>
 
 ...
 
 <Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
+  <IndexRoute component={Home} />
+  <Route name="about" component={About} />
 </Route>

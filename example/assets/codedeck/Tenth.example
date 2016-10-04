@@ -1,9 +1,11 @@
 <Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
+  <Redirect from="/user/me" to="user" params={userId: '1234'} />
+  <Route name="user" path="/user/:userId" handler={User} />
 </Route>
 
 ...
 
 <Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
+  <Redirect from="/user/me" to="user/1234" />
+  <Route path="user/:userId" component={User} />
 </Route>

@@ -1,9 +1,5 @@
-<Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
-</Route>
+<Link to="user" params={{userId: MY_ID}}>John Do</Link>
 
 ...
 
-<Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
-</Route>
+<Link to={'/users/' + MY_ID}>John Do</Link>

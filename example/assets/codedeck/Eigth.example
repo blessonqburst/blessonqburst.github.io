@@ -1,9 +1,15 @@
-<Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
-</Route>
+class App extends React.Component {
+  render() {
+    return (
+      <RouterHandler />
+    );
+  }
+}
 
-...
-
-<Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
-</Route>
+class App extends React.Component {
+  render() {
+    return (
+      {this.props.children}
+    );
+  }
+}

@@ -1,9 +1,5 @@
-<Route handler={App} path="/">
-  <Route name="user" path="/user/:userid" handler={user} />
-</Route>
+<NotFoundRoute handler={NotFound} />
 
 ...
 
-<Route component={App} path="/">
-  <Route path="/user/:userid" component={user} />
-</Route>
+<Route path="*" component={NotFound} />
