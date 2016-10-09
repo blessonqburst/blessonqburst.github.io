@@ -1,21 +1,28 @@
-handleClick: function(event) {
-  var inputNum = this.ref.random_number;
-  thsi.setState({value: inputNum.value});
-},
-render: function() {
-  var value = this.state.value;
-  var successBox;
-  if(value>5) {
-    console.log('value Validation passed!');
-    successBox = <div>Success!</div>
-  } else {
-    console.log('value Validation failed!');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Style from './styles.css';
+var Counter = React.createClass({
+
+  getInitialState: function(){
+     return {
+       count: 0
+     }
+  },
+
+  incrementCount: function(){
+    this.setState({
+      count: this.state.count + 1
+    });
+  },
+
+  render(): function{
+    return (
+      <div className = {Style.container}>
+        <h1>The button has been clicked {this.state.count} times</h1>
+        <button type="button" onClick={this.incrementCount}>{this.props.name}</button>
+      </div>
+    );
   }
-  return (
-    <div>
-      {successBox}
-      <label htmlFor="random_number">{this.props.label}</label>
-      <input id="random_number" ref="random_number" type="text" name="random_number" />
-      <button id="subBtn" onClick={this.handleClick}>Send</button>
-    </div>
-  );
+});
+
+ReactDOM.render(<Counter name = "Click Me"/>, document.getElementById('app'));

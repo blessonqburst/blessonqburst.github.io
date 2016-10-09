@@ -14,7 +14,6 @@ export default class Interactive extends Component {
       count: this.state.count + 1
     });
   }
-
   render() {
     const styles = {
       padding: 20,
@@ -30,12 +29,15 @@ export default class Interactive extends Component {
     };
     return (
       <div>
+      {this.state.count < 5 ?
         <div>
           <Heading size={5} textColor="black">
             The button has been clicked {this.state.count} times
           </Heading>
-          <button style={styles} type="button" onClick={this.handleClick}>{this.props.name}</button>
-        </div>
+          <button style={styles} type="button" onClick={this.handleClick}>Click Me</button>
+        </div> :
+          <Heading size={5} fit caps textColor="black">Easy there pal</Heading>
+        }
       </div>
     );
   }

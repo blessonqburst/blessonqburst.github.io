@@ -31,6 +31,7 @@ import SlideTwentytwo from "./slides/slideTwentytwo.js";
 import SlideTwentythree from "./slides/slideTwentythree.js";
 import SlideTwentyfour from "./slides/slideTwentyfour.js";
 import SlideTwentyfive from "./slides/slideTwentyfive.js";
+import SlideSmartandDump from "./slides/slideSmartandDump.js";
 
 import preloader from "../../src/utils/preloader";
 
@@ -103,6 +104,12 @@ export default class Presentation extends React.Component {
           <Slide transition={["slide"]} bgColor="primary">
             <SlideFifth/>
           </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../assets/codedeck/component.example")}
+            />
+          </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <SlideSixth/>
           </Slide>
@@ -118,9 +125,6 @@ export default class Presentation extends React.Component {
               margin= "20px auto"
             />
           </Appear>
-          </Slide>
-          <Slide transition={["zoom"]} bgColor="primary">
-            <SlideSeventh/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <SlideEight/>
@@ -163,6 +167,12 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <SlideSeventeenth/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <SlideSmartandDump/>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <SlideSeventh/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <SlideEighteenth/>
@@ -219,6 +229,9 @@ export default class Presentation extends React.Component {
               source={require("raw!../assets/codedeck/fifth.example")}
             />
             </Appear>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Interactive name = "Click Me"/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <Heading size={3} caps textColor="black" textFont="primary">

@@ -7,7 +7,7 @@ var MyApp = React.createClass({
   }
 })
 
-React.render(<MyApp />, document.getElementById('content'));
+ReactDOM.render(<MyApp />, document.getElementById('content'));
 </script>
 </body>
 </html>
