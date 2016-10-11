@@ -135,14 +135,6 @@ export default class Presentation extends React.Component {
             <Image src={images.childfirst.replace("/", "")} margin="0px auto 40px" height="293px"/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
-            <SlideEleventh/>
-            <Image src={images.inverseparent.replace("/", "")} margin="0px auto 40px" height="293px"/>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <SlideTwelth/>
-            <Image src={images.childsecond.replace("/", "")} margin="0px" height="293px"/>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
             <SlideThirteenth/>
             <Fill>
               <Appear><Image src={images.proptype.replace("/", "")} margin={1} /></Appear>
