@@ -90,9 +90,6 @@ export default class Presentation extends React.Component {
             <SlideFirst/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
-            <SlideSecond/>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
             <SlideThird/>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
@@ -232,6 +229,9 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <Interactive name = "Click Me"/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <SlideSecond/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <Heading size={3} caps textColor="black" textFont="primary">

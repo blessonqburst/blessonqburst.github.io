@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  Heading, List, ListItem, Appear, Text
+  Heading, List, ListItem, Text
 } from "../../../src";
 
 export default class SlideThird extends React.Component {
@@ -10,13 +10,13 @@ export default class SlideThird extends React.Component {
         <Heading size={1} fit caps textColor="black">
           Virtual DOM
         </Heading>
-          <Appear><Text textSize="1.5em" margin="20px 0px 0px" bold>Make re-rendering on every change fast.</Text></Appear>
-          <Appear><Text textSize="1.5em" margin="20px 0px 0px" bold>On every update…</Text></Appear>
+          <Text textSize="1.5em" margin="20px 0px 0px" bold>Make re-rendering on every change fast.</Text>
+          <Text textSize="1.5em" margin="20px 0px 0px" bold>On every update…</Text>
         <List>
-          <Appear><ListItem>React Builds a new virtual DOM subtree.</ListItem></Appear>
-          <Appear><ListItem>Diffs it with the old tree.</ListItem></Appear>
-          <Appear><ListItem>Computes the minimal set of DOM mutations and puts them in a queue.</ListItem></Appear>
-          <Appear><ListItem>And batch executes all updates.</ListItem></Appear>
+          <ListItem>React Builds a new virtual DOM subtree</ListItem>
+          <ListItem>Diffs it with the old tree</ListItem>
+          <ListItem>Computes the minimal set of DOM mutations and puts them in a queue</ListItem>
+          <ListItem>And batch executes all updates</ListItem>
         </List>
       </div>
     );

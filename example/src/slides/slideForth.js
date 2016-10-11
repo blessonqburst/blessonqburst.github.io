@@ -12,7 +12,7 @@ export default class SlideForth extends React.Component {
         </Heading>
         <List>
           <ListItem>The core building blocks of React application.</ListItem>
-          <ListItem>Components are interactive, reusable and stageful too.</ListItem>
+          <ListItem>Components are interactive and reusable.</ListItem>
           <ListItem>In Reactjs whole application is need to be break into the component only.</ListItem>
         </List>
       </div>
