@@ -173,21 +173,6 @@ export default class Presentation extends React.Component {
             <SlideTwenty/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
-            <Heading size={3} caps textColor="black" textFont="primary">
-              Sce­nar­ios
-            </Heading>
-            <Image src={images.life1.replace("/", "")} margin="0px auto 40px" />
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Image src={images.life2.replace("/", "")} margin="0px auto 40px" />
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Image src={images.life3.replace("/", "")} margin="0px auto 40px" />
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Image src={images.life4.replace("/", "")} margin="0px auto 40px" />
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
             <SlideTwentyone/>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
